@@ -5,7 +5,7 @@ class TypeUtils {
   /// Returns `true` if types match exactly, taking nullable types into account.
   ///
   /// Example outputs:
-  /// ```
+  /// ```dart
   /// TypeUtils.areTypesEqual<int, int>() == true
   /// TypeUtils.areTypesEqual<int, int?>() == false
   /// ```

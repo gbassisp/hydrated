@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:rehydrated/src/key_value_store/key_value_store.dart';
 import 'package:rehydrated/src/key_value_store/shared_preferences_store.dart';
+import 'package:rehydrated/src/utils/internal_utils.dart';
 import 'package:rxdart/rxdart.dart';
 
 /// A callback for encoding an instance of a data class into a String.
@@ -20,13 +21,13 @@ typedef HydrateCallback<T> = T Function(String);
 ///
 /// Example:
 ///
-/// ```
+/// ```dart
 ///   final count = HydratedSubject<int>("count", seedValue: 0);
 /// ```
 ///
 /// Serialized class example:
 ///
-/// ```
+/// ```dart
 ///   final user = HydratedSubject<User>(
 ///     "user",
 ///     hydrate: (String s) => User.fromJson(s),
@@ -38,7 +39,7 @@ typedef HydrateCallback<T> = T Function(String);
 /// Hydration is performed automatically and is asynchronously.
 /// The `onHydrate` callback is called when hydration is complete.
 ///
-/// ```
+/// ```dart
 ///   final user = HydratedSubject<int>(
 ///     "count",
 ///     onHydrate: () => loading.add(false),
@@ -82,7 +83,6 @@ class HydratedSubject<T> extends Subject<T> implements ValueStream<T> {
           (hydrate != null && persist != null),
       '`hydrate` and `persist` callbacks must both be present.',
     );
-    // ignore: close_sinks
     final subject = seedValue != null
         ? BehaviorSubject<T>.seeded(
             seedValue,
@@ -116,12 +116,12 @@ class HydratedSubject<T> extends Subject<T> implements ValueStream<T> {
     this._subject,
     this._persistence,
   ) : super(_subject, _subject.stream) {
-    _hydrateSubject();
+    unawaited$(_hydrateSubject());
   }
 
   @override
   void onAdd(T event) {
-    _persistValue(event);
+    unawaited$(_persistValue(event));
   }
 
   @override
