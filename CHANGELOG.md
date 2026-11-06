@@ -1,3 +1,12 @@
+# rehydrated 
+
+## 2.1.1
+
+- Update dependencies
+- Rename lib, docs and publish fork
+
+# hydrated
+
 ## 2.1.0
 
 - Add support for a generic `KeyValueStore` interface.
