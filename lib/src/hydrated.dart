@@ -211,4 +211,7 @@ class HydratedSubject<T> extends Subject<T> implements ValueStream<T> {
       persist: persist,
     );
   }
+
+  @override
+  StreamNotification<T>? get lastEventOrNull => _subject.lastEventOrNull;
 }
