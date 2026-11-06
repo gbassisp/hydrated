@@ -1,8 +1,8 @@
 name: rehydrated
 description:
   An automatically persisted BehaviorSubject with simple hydration for Flutter.
-  Intended to be used with the BLoC pattern.
-version: 2.1.0
+  A fork of the original hydrated lib.
+version: 2.1.1
 homepage: https://github.com/solid-software/hydrated
 
 environment:
