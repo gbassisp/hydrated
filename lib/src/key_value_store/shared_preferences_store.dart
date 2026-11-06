@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// - `String`
 /// - `List<String>`.
 class SharedPreferencesStore implements KeyValueStore {
-  static const _areTypesEqual = TypeUtils.areTypesEqual;
+  static const bool Function<T1, T2>() _areTypesEqual = TypeUtils.areTypesEqual;
 
   /// Create an instance of [SharedPreferences] storage wrapper.
   const SharedPreferencesStore();

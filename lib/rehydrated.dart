@@ -1,3 +1,4 @@
+/// renamed lib
 library rehydrated;
 
 export 'src/hydrated.dart';

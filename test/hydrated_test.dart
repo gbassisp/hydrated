@@ -51,7 +51,9 @@ void main() {
   group('HydratedSubject', () {
     group('hydration', () {
       test('Tries to hydrate upon instantiation', () {
-        mockKeyValueStore.getOverride = expectAsync1((_) async {}, count: 1);
+        mockKeyValueStore.getOverride = expectAsync1((_) async {
+          return null;
+        }, count: 1);
 
         HydratedSubject<int>(key, keyValueStore: mockKeyValueStore);
       });
