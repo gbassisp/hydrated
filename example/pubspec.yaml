@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  hydrated:
+  rehydrated:
     path: ../
 
 dev_dependencies:

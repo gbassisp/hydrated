@@ -1,4 +1,4 @@
-library hydrated;
+library rehydrated;
 
 export 'src/hydrated.dart';
 export 'src/key_value_store/key_value_store.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hydrated/hydrated.dart';
+import 'package:rehydrated/hydrated.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
