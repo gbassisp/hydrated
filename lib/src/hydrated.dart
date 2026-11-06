@@ -195,23 +195,5 @@ class HydratedSubject<T> extends Subject<T> implements ValueStream<T> {
   }
 
   @override
-  Subject<R> createForwardingSubject<R>({
-    VoidCallback? onListen,
-    VoidCallback? onCancel,
-    bool sync = false,
-    HydrateCallback<R>? hydrate,
-    PersistCallback<R?>? persist,
-  }) {
-    return HydratedSubject(
-      _key,
-      onListen: onListen,
-      onCancel: onCancel,
-      sync: sync,
-      hydrate: hydrate,
-      persist: persist,
-    );
-  }
-
-  @override
   StreamNotification<T>? get lastEventOrNull => _subject.lastEventOrNull;
 }
