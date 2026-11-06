@@ -1,4 +1,4 @@
-import 'package:hydrated/src/key_value_store/store_error.dart';
+import 'package:rehydrated/src/key_value_store/store_error.dart';
 
 /// A generic key-value persistence interface.
 abstract class KeyValueStore {

@@ -2,7 +2,7 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hydrated/hydrated.dart';
+import 'package:rehydrated/rehydrated.dart';
 import 'package:rxdart/rxdart.dart';
 
 class StubKeyValueStore implements KeyValueStore {

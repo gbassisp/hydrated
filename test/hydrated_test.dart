@@ -1,6 +1,6 @@
 // ignore_for_file: close_sinks
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hydrated/hydrated.dart';
+import 'package:rehydrated/rehydrated.dart';
 
 typedef GetOverride = Future<Object?> Function(String key);
 typedef PutOverride = Future<void> Function(String key, Object value);

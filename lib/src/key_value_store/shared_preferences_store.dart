@@ -1,6 +1,6 @@
-import 'package:hydrated/src/key_value_store/key_value_store.dart';
-import 'package:hydrated/src/key_value_store/store_error.dart';
-import 'package:hydrated/src/utils/type_utils.dart';
+import 'package:rehydrated/src/key_value_store/key_value_store.dart';
+import 'package:rehydrated/src/key_value_store/store_error.dart';
+import 'package:rehydrated/src/utils/type_utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// An adapter for [SharedPreferences] persistence.

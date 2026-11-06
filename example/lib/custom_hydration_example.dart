@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hydrated/hydrated.dart';
+import 'package:rehydrated/rehydrated.dart';
 
 void main() => runApp(CustomHydrationExample());
 

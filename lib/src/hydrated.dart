@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:hydrated/src/key_value_store/key_value_store.dart';
-import 'package:hydrated/src/key_value_store/shared_preferences_store.dart';
+import 'package:rehydrated/src/key_value_store/key_value_store.dart';
+import 'package:rehydrated/src/key_value_store/shared_preferences_store.dart';
 import 'package:rxdart/rxdart.dart';
 
 /// A callback for encoding an instance of a data class into a String.
