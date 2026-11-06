@@ -1,4 +1,4 @@
-include: package:solid_lints/analysis_options_test.yaml
+include: package:lints/core.yaml
 
 analyzer:
   exclude:
