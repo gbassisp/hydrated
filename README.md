@@ -1,4 +1,18 @@
-# Hydrated
+# rehydrated
+
+This is a fork of the original [hydrated](https://pub.dev/packages/hydrated) by Luke Pighetti. The original lib has had no updates for many years.
+
+I have appended my own copyright line to the license and kept the original content intact.
+
+This fork contains some updates to obsolete dependencies + minor updates.
+
+---
+
+# ORIGINAL README:
+
+
+
+## Hydrated
 
 [![Version](https://img.shields.io/pub/v/hydrated)](https://pub.dev/packages/hydrated)
 [![Build](https://img.shields.io/github/workflow/status/lukepighetti/hydrated/Flutter)](https://github.com/lukepighetti/hydrated/actions?query=Flutter)
